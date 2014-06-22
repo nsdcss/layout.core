@@ -1,0 +1,14 @@
+{
+  "name": "nsdcss-layout-core",
+  "version": "0.1.0",
+  "main": "layout.core.less",
+  "author": "Nikolaj Sokolowski",
+  "license": "MIT",
+  "dependencies": {
+    "nsdcss-core-variables": "https://github.com/nsdcss/core.variables.git",
+  },
+  "nsdcss": {
+    "order": "010",
+    "scope": "framework"
+  }
+}

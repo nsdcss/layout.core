@@ -1,0 +1,83 @@
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+
+/**
+ * layout wrapper (e.g. a row)
+ */
+.@{cf__framework-prefix}layout,
+.@{cf__framework-prefix}layout--small,
+.@{cf__framework-prefix}layout--tiny,
+.@{cf__framework-prefix}layout--super-tiny {
+	/**
+	 * Negative margin to negate the padding on the first layout child.
+	 */
+	.get-rem(-1);
+	margin-left: (@s__base-spacing-unit) * -1px;
+	margin-left: @rem;
+	list-style:none;
+	margin-bottom:0;
+}
+
+
+/**
+ *	Small Variant
+ */
+.@{cf__framework-prefix}layout--small {
+	.get-rem(-.5);
+	margin-left: (@s__base-spacing-unit) * -.5px;
+	margin-left: @rem;
+}
+
+/**
+ *	Tiny Variant
+ */
+.@{cf__framework-prefix}layout--tiny {
+	.get-rem(-.25);
+	margin-left: (@s__base-spacing-unit) * -.25px;
+	margin-left: @rem;
+}
+
+/**
+ *	Super-tiny Variant
+ */
+.@{cf__framework-prefix}layout--super-tiny {
+	margin-left: -.3em;
+}
+
+
+
+/**
+ * layout element (e.g. a column)
+ */
+
+.@{cf__framework-prefix}layout__item,
+.@{cf__framework-prefix}layout__item--small,
+.@{cf__framework-prefix}layout__item--tiny,
+.@{cf__framework-prefix}layout__item--super-tiny {
+	display:inline-block;
+	vertical-align:top;
+	width:100%;
+}
+
+.@{cf__framework-prefix}layout__item {
+	.get-rem(1);
+	padding-left: @s__base-spacing-unit * 1px;
+	padding-left: @rem;
+}
+
+.@{cf__framework-prefix}layout__item--small {
+	.get-rem(.5);
+	padding-left: @s__base-spacing-unit * .5px;
+	padding-left: @rem;
+}
+
+.@{cf__framework-prefix}layout__item--tiny {
+	.get-rem(.25);
+	padding-left: @s__base-spacing-unit * .25px;
+	padding-left: @rem;
+}
+
+.@{cf__framework-prefix}layout__item--super-tiny {
+	padding-left: -.3em;
+}
